@@ -8,7 +8,11 @@ export default {
       },
       colors: {
         beige200: "#EFE8DF",
+        grey: "#757575",
       },
+      // backgroundImage: {
+      //   mainBlock: 'url("./assets/img/main.png")',
+      // },
     },
     plugins: [],
   },
