@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         beige200: "#EFE8DF",
+        beige100: "#F6F3EF",
         grey: "#757575",
       },
       // backgroundImage: {
