@@ -5,15 +5,15 @@
     class="w-full h-24 bg-white flex flex-row justify-between items-center px-20"
   >
     <div>
-      <HeaderBtn>о нас</HeaderBtn>
-      <HeaderBtn>Прораммы</HeaderBtn>
-      <HeaderBtn>Результаты</HeaderBtn>
+      <NavBtn>о нас</NavBtn>
+      <NavBtn>Прораммы</NavBtn>
+      <NavBtn>Результаты</NavBtn>
     </div>
 
     <a href="" class="font-main uppercase text-2xl font-bold">Трансформация</a>
 
     <div>
-      <HeaderBtn>Контакты</HeaderBtn>
+      <NavBtn>Контакты</NavBtn>
       <FeedBackBtn />
     </div>
   </div>

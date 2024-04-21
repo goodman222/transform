@@ -1,6 +1,6 @@
 import Header from "./Header.vue";
 import FeedBackBtn from "./FeedBackBtn.vue";
-import HeaderBtn from "./HeaderBtn.vue";
+import NavBtn from "./NavBtn.vue";
 import MainBlock from "./MainBlock.vue";
 import InfoBlock from "./InfoBlock.vue";
 import Advantages from "./Advantages.vue";
@@ -8,10 +8,14 @@ import AdvantageTile from "./AdvantageTile.vue";
 import SectionHeader from "./SectionHeader.vue";
 import FeedBackForm from "./FeedBackForm.vue";
 import Input from "./Input.vue";
+import Tariffs from "./Tariffs.vue";
+import TariffItem from "./TariffItem.vue";
+import Footer from "./Footer.vue";
+import FooterLink from "./FooterLink.vue";
 
 const components = [
   { name: "Header", component: Header },
-  { name: "HeaderBtn", component: HeaderBtn },
+  { name: "NavBtn", component: NavBtn },
   { name: "FeedBackBtn", component: FeedBackBtn },
   { name: "MainBlock", component: MainBlock },
   { name: "InfoBlock", component: InfoBlock },
@@ -20,6 +24,10 @@ const components = [
   { name: "SectionHeader", component: SectionHeader },
   { name: "FeedBackForm", component: FeedBackForm },
   { name: "Input", component: Input },
+  { name: "Tariffs", component: Tariffs },
+  { name: "TariffItem", component: TariffItem },
+  { name: "Footer", component: Footer },
+  { name: "FooterLink", component: FooterLink },
 ];
 
 export default {

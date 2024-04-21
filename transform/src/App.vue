@@ -9,7 +9,9 @@ import FeedBackForm from "./components/global/FeedBackForm.vue";
       <MainBlock />
       <InfoBlock />
       <Advantages class="mb-48" />
+      <Tariffs class="mb-48" />
       <FeedBackForm class="mb-48" />
     </main>
+    <Footer />
   </div>
 </template>
