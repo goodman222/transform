@@ -17,6 +17,8 @@ import AboutUsPage from "./AboutUsPage.vue";
 import TariffsPage from "./TariffsPage.vue";
 import ResultsPage from "./ResultsPage.vue";
 import ContactsPage from "./ContactsPage.vue";
+import CoachesBlock from "./CoachesBlock.vue";
+import CoachesItem from "./CoachesItem.vue";
 
 const components = [
   { name: "Header", component: Header },
@@ -38,6 +40,8 @@ const components = [
   { name: "TariffsPage", component: TariffsPage },
   { name: "ResultsPage", component: ResultsPage },
   { name: "ContactsPage", component: ContactsPage },
+  { name: "CoachesBlock", component: CoachesBlock },
+  { name: "CoachesItem", component: CoachesItem },
 ];
 
 export default {

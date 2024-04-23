@@ -55,7 +55,7 @@ const tariffs = [
     <SectionHeader>Программы</SectionHeader>
     <div
       class="w-full grid grid-rows-1 gap-x-6"
-      :style="{ gridTemplateColumns: `repeat(${tariffs.length}, auto)` }"
+      :style="{ gridTemplateColumns: `repeat(${tariffs.length}, 1fr)` }"
     >
       <TariffItem
         v-for="(item, index) in tariffs"

@@ -1,3 +1,5 @@
+<!-- Кнопки в шапке и подвале -->
+
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
 const props = defineProps({
@@ -13,9 +15,14 @@ function changePage() {
 </script>
 
 <template>
-  <button @click="changePage" class="uppercase font-medium text-base font-main">
+  <button
+    @click="changePage"
+    class="uppercase font-medium text-base font-main"
+    :style="{
+      textDecoration:
+        store.currentPage === props.targetPage ? 'underline' : 'none',
+    }"
+  >
     <slot></slot>
   </button>
 </template>
-
-<style scoped></style>

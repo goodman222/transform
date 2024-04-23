@@ -13,11 +13,12 @@ const store = useTransformStore();
       <NavBtn :targetPage="`results`">Результаты</NavBtn>
     </div>
 
-    <btn
+    <button
       @click="store.currentPage = 'main'"
       class="font-main uppercase text-2xl font-bold cursor-pointer"
-      >Трансформация</btn
     >
+      Трансформация
+    </button>
 
     <div>
       <NavBtn :targetPage="`contacts`" class="mr-16">Контакты</NavBtn>
