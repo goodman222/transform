@@ -12,6 +12,11 @@ import Tariffs from "./Tariffs.vue";
 import TariffItem from "./TariffItem.vue";
 import Footer from "./Footer.vue";
 import FooterLink from "./FooterLink.vue";
+import MainPage from "./MainPage.vue";
+import AboutUsPage from "./AboutUsPage.vue";
+import TariffsPage from "./TariffsPage.vue";
+import ResultsPage from "./ResultsPage.vue";
+import ContactsPage from "./ContactsPage.vue";
 
 const components = [
   { name: "Header", component: Header },
@@ -28,6 +33,11 @@ const components = [
   { name: "TariffItem", component: TariffItem },
   { name: "Footer", component: Footer },
   { name: "FooterLink", component: FooterLink },
+  { name: "MainPage", component: MainPage },
+  { name: "AboutUsPage", component: AboutUsPage },
+  { name: "TariffsPage", component: TariffsPage },
+  { name: "ResultsPage", component: ResultsPage },
+  { name: "ContactsPage", component: ContactsPage },
 ];
 
 export default {
