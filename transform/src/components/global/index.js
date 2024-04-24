@@ -19,6 +19,10 @@ import ResultsPage from "./ResultsPage.vue";
 import ContactsPage from "./ContactsPage.vue";
 import CoachesBlock from "./CoachesBlock.vue";
 import CoachesItem from "./CoachesItem.vue";
+import ResultsBlock from "./ResultsBlock.vue";
+import ResultsItem from "./ResultsItem.vue";
+import ContactsBlock from "./ContactsBlock.vue";
+import ContactsTile from "./ContactsTile.vue";
 
 const components = [
   { name: "Header", component: Header },
@@ -42,6 +46,10 @@ const components = [
   { name: "ContactsPage", component: ContactsPage },
   { name: "CoachesBlock", component: CoachesBlock },
   { name: "CoachesItem", component: CoachesItem },
+  { name: "ResultsItem", component: ResultsItem },
+  { name: "ResultsBlock", component: ResultsBlock },
+  { name: "ContactsBlock", component: ContactsBlock },
+  { name: "ContactsTile", component: ContactsTile },
 ];
 
 export default {
