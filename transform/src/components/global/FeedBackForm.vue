@@ -1,3 +1,8 @@
+<script setup>
+import { useTransformStore } from "./../../store/TransformStore";
+const store = useTransformStore();
+</script>
+
 <template>
   <div class="w-[571px] mx-auto">
     <SectionHeader>Оставь заявку и начни трансформацию!</SectionHeader>
@@ -5,7 +10,7 @@
       <Input type="text" placeholder="ФИО" />
       <Input type="email" placeholder="email" />
       <Input type="number" placeholder="телефон" />
-      <Input type="dropdown" placeholder="программа" />
+      <DropDown :selectedItem="store.PopUpOptions.name" />
       <button
         type="submit"
         class="uppercase bg-beige200 text-black w-full py-4"

@@ -42,6 +42,7 @@ const results = [
         v-for="(item, index) in results"
         :key="index"
         :result="item"
+        :isFull="false"
       />
     </div>
   </div>

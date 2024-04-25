@@ -23,6 +23,8 @@ import ResultsBlock from "./ResultsBlock.vue";
 import ResultsItem from "./ResultsItem.vue";
 import ContactsBlock from "./ContactsBlock.vue";
 import ContactsTile from "./ContactsTile.vue";
+import PopUp from "./PopUp.vue";
+import DropDown from "./DropDown.vue";
 
 const components = [
   { name: "Header", component: Header },
@@ -50,6 +52,8 @@ const components = [
   { name: "ResultsBlock", component: ResultsBlock },
   { name: "ContactsBlock", component: ContactsBlock },
   { name: "ContactsTile", component: ContactsTile },
+  { name: "PopUp", component: PopUp },
+  { name: "DropDown", component: DropDown },
 ];
 
 export default {
