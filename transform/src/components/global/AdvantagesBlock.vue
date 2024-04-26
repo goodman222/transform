@@ -1,5 +1,5 @@
 <template>
-  <div class="px-12">
+  <section class="px-12">
     <SectionHeader>Почему нас выбирают</SectionHeader>
 
     <div class="plate-container">
@@ -50,7 +50,7 @@
         </template>
       </AdvantageTile>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>

@@ -1,12 +1,12 @@
 <script setup>
-import { useTariffsStore } from "./../../store/TariffsStore.js";
-const store = useTariffsStore();
+import { useTariffsStore } from "../../store/TariffsStore.js";
+const tariffsStore = useTariffsStore();
 
-const tariffs = store.tariffs;
+const tariffs = tariffsStore.tariffs;
 </script>
 
 <template>
-  <div class="px-20">
+  <section class="px-20">
     <SectionHeader>Программы</SectionHeader>
     <div
       class="w-full grid grid-rows-1 gap-x-6"
@@ -18,5 +18,5 @@ const tariffs = store.tariffs;
         :tariff="item"
       />
     </div>
-  </div>
+  </section>
 </template>

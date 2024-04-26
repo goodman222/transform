@@ -1,4 +1,3 @@
-import FeedBackForm from './FeedBackForm.vue';
 <template>
   <div>
     <ResultsBlock class="mt-14 mb-20" />

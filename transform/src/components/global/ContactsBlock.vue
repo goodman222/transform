@@ -1,5 +1,5 @@
 <template>
-  <div class="px-20">
+  <section class="px-20">
     <SectionHeader>Контакты</SectionHeader>
     <div class="grid grid-cols-3 gap-5">
       <ContactsTile>
@@ -20,5 +20,5 @@
         <template v-slot:content>г. Болотное, ...</template>
       </ContactsTile>
     </div>
-  </div>
+  </section>
 </template>

@@ -1,6 +1,5 @@
-import FeedBackBtn from './FeedBackBtn.vue';
 <template>
-  <div
+  <section
     class="background w-full flex flex-col justify-between items-center bg-[url('./assets/img/main.png')] bg-cover pb-20"
   >
     <div class="flex flex-col items-center">
@@ -19,7 +18,7 @@ import FeedBackBtn from './FeedBackBtn.vue';
         вдохновляющими рецептами – все для вашего здоровья и красоты
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

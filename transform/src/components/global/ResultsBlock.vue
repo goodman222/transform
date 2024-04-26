@@ -35,7 +35,7 @@ const results = [
 </script>
 
 <template>
-  <div>
+  <section>
     <SectionHeader>Резульаты нашей работы</SectionHeader>
     <div class="grid grid-cols-3 gap-6 px-20">
       <ResultsItem
@@ -45,5 +45,5 @@ const results = [
         :isFull="false"
       />
     </div>
-  </div>
+  </section>
 </template>

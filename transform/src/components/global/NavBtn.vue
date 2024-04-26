@@ -2,15 +2,24 @@
 
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
+const transformStore = useTransformStore();
+
+import { useRouter } from "vue-router";
+const router = useRouter();
+
 const props = defineProps({
   textColor: String,
   targetPage: String,
 });
 
-const store = useTransformStore();
-
 function changePage() {
-  store.currentPage = props.targetPage;
+  router.push({ name: props.targetPage });
+  //Возврат наверх страницы
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 </script>
 
@@ -19,8 +28,7 @@ function changePage() {
     @click="changePage"
     class="uppercase font-medium text-base font-main"
     :style="{
-      textDecoration:
-        store.currentPage === props.targetPage ? 'underline' : 'none',
+      textDecoration: $route.name === props.targetPage ? 'underline' : 'none',
     }"
   >
     <slot></slot>

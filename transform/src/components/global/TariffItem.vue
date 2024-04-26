@@ -1,6 +1,6 @@
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
-const store = useTransformStore();
+const transformStore = useTransformStore();
 
 const props = defineProps({
   tariff: Object,
@@ -39,7 +39,7 @@ const tariff = props.tariff;
 
     <button
       class="w-full bg-black text-white font-main text-base uppercase py-6 mt-4"
-      @click="store.openPopUp('FeedBackForm', { name: tariff.name })"
+      @click="transformStore.openPopUp('FeedBackForm', { name: tariff.name })"
     >
       Оставить заявку
     </button>

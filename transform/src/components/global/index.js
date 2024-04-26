@@ -1,16 +1,16 @@
-import Header from "./Header.vue";
+import AppHeader from "./AppHeader.vue";
 import FeedBackBtn from "./FeedBackBtn.vue";
 import NavBtn from "./NavBtn.vue";
 import MainBlock from "./MainBlock.vue";
 import InfoBlock from "./InfoBlock.vue";
-import Advantages from "./Advantages.vue";
+import AdvantagesBlock from "./AdvantagesBlock.vue";
 import AdvantageTile from "./AdvantageTile.vue";
 import SectionHeader from "./SectionHeader.vue";
 import FeedBackForm from "./FeedBackForm.vue";
-import Input from "./Input.vue";
-import Tariffs from "./Tariffs.vue";
+import AppInput from "./AppInput.vue";
+import TariffsBlock from "./TariffsBlock.vue";
 import TariffItem from "./TariffItem.vue";
-import Footer from "./Footer.vue";
+import AppFooter from "./AppFooter.vue";
 import FooterLink from "./FooterLink.vue";
 import MainPage from "./MainPage.vue";
 import AboutUsPage from "./AboutUsPage.vue";
@@ -27,19 +27,19 @@ import PopUp from "./PopUp.vue";
 import DropDown from "./DropDown.vue";
 
 const components = [
-  { name: "Header", component: Header },
+  { name: "AppHeader", component: AppHeader },
   { name: "NavBtn", component: NavBtn },
   { name: "FeedBackBtn", component: FeedBackBtn },
   { name: "MainBlock", component: MainBlock },
   { name: "InfoBlock", component: InfoBlock },
-  { name: "Advantages", component: Advantages },
+  { name: "AdvantagesBlock", component: AdvantagesBlock },
   { name: "AdvantageTile", component: AdvantageTile },
   { name: "SectionHeader", component: SectionHeader },
   { name: "FeedBackForm", component: FeedBackForm },
-  { name: "Input", component: Input },
-  { name: "Tariffs", component: Tariffs },
+  { name: "AppInput", component: AppInput },
+  { name: "TariffsBlock", component: TariffsBlock },
   { name: "TariffItem", component: TariffItem },
-  { name: "Footer", component: Footer },
+  { name: "AppFooter", component: AppFooter },
   { name: "FooterLink", component: FooterLink },
   { name: "MainPage", component: MainPage },
   { name: "AboutUsPage", component: AboutUsPage },

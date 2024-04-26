@@ -1,8 +1,10 @@
 <template>
-  <div class="bg-beige100 px-20 pt-10 h-[400px] flex flex-col justify-between">
+  <footer
+    class="bg-beige100 px-20 pt-10 h-[400px] flex flex-col justify-between"
+  >
     <div class="flex flex-row justify-between">
       <div class="grid grid-cols-4 gap-16">
-        <NavBtn :targetPage="`aboutUs`">О нас</NavBtn>
+        <NavBtn :targetPage="`about`">О нас</NavBtn>
         <NavBtn :targetPage="`tariffs`">Программы</NavBtn>
         <NavBtn :targetPage="`results`">Результаты</NavBtn>
         <NavBtn :targetPage="`contacts`">Контакты</NavBtn>
@@ -15,5 +17,5 @@
     </div>
 
     <div><img src="./../../assets/img/Logo.png" alt="" /></div>
-  </div>
+  </footer>
 </template>

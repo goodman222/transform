@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 import { useTariffsStore } from "./../../store/TariffsStore";
-const store = useTariffsStore();
+const TariffsStore = useTariffsStore();
 
 const props = defineProps({
   selectedItem: { type: String, default: "программа" },
@@ -27,7 +27,7 @@ const selectedItem = ref(props.selectedItem);
       <!-- Варианты выбора -->
       <div v-show="dropdownOpen" class="absolute bg-beige200 w-full">
         <div
-          v-for="(item, index) in store.namesArray"
+          v-for="(item, index) in TariffsStore.namesArray"
           :key="index"
           @click="
             selectedItem = item;

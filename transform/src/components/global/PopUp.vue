@@ -1,11 +1,11 @@
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
-const store = useTransformStore();
+const transformStore = useTransformStore();
 
 function closePopUp() {
-  store.isPopupOpen = !store.isPopupOpen;
-  store.popUpType = "";
-  store.PopUpOptions = {};
+  transformStore.isPopupOpen = !transformStore.isPopupOpen;
+  transformStore.popUpType = "";
+  transformStore.PopUpOptions = {};
 }
 
 const content = {
@@ -28,10 +28,10 @@ const content = {
         <img src="./../../assets/img/x.png" alt="" />
       </button>
       <div>
-        <FeedBackForm v-if="store.popUpType === 'FeedBackForm'" />
+        <FeedBackForm v-if="transformStore.popUpType === 'FeedBackForm'" />
         <ResultsItem
-          v-else-if="store.popUpType === 'ResultItem'"
-          :result="store.PopUpOptions"
+          v-else-if="transformStore.popUpType === 'ResultItem'"
+          :result="transformStore.PopUpOptions"
           :isFull="true"
         />
       </div>

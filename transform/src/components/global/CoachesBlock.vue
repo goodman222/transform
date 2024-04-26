@@ -29,7 +29,7 @@ const coaches = [
 </script>
 
 <template>
-  <div>
+  <section>
     <sectionHeader>Тренеры</sectionHeader>
     <p class="text-center font-main font-normal text-base mb-16">
       Мы создаем ваши тела
@@ -49,5 +49,5 @@ const coaches = [
         :coach="item"
       />
     </div>
-  </div>
+  </section>
 </template>

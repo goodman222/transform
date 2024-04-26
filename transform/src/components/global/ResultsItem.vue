@@ -1,6 +1,6 @@
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
-const store = useTransformStore();
+const transformStore = useTransformStore();
 
 const props = defineProps({
   result: Object,
@@ -41,7 +41,7 @@ if (!isFull) {
         {{ text }}
         <button
           class="text-grey underline underline-offset-2 decoration-1"
-          @click="store.openPopUp('ResultItem', result)"
+          @click="transformStore.openPopUp('ResultItem', result)"
           v-show="!isFull"
         >
           Читать далее
