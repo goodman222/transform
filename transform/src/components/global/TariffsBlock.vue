@@ -1,8 +1,9 @@
 <script setup>
-import { useTariffsStore } from "../../store/TariffsStore.js";
+import { storeToRefs } from "pinia";
+import { useTariffsStore } from "../../store/TariffsStore";
 const tariffsStore = useTariffsStore();
 
-const tariffs = tariffsStore.tariffs;
+let { tariffs } = storeToRefs(tariffsStore);
 </script>
 
 <template>

@@ -1,6 +1,11 @@
 <script setup>
 import { useTransformStore } from "./store/TransformStore";
 const transformStore = useTransformStore();
+
+import { useTariffsStore } from "./store/TariffsStore";
+const tariffsStore = useTariffsStore();
+
+tariffsStore.getTariffs();
 </script>
 
 <template>

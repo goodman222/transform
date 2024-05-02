@@ -1,18 +1,60 @@
 <script setup>
 import { useTransformStore } from "./../../store/TransformStore";
 const transformStore = useTransformStore();
+
+const formData = {
+  name: { value: "", regexp: / / },
+  email: { value: "", regexp: / / },
+  number: { value: null, regexp: / / },
+  tariff: { value: "", regexp: / / },
+};
+
+function formValidation() {
+  for (const key in formData) {
+    const item = formData.key;
+    if (!item.regexp.test(item.value)) {
+      console.log(Ошибка);
+    }
+  }
+}
+
+async function sendForm() {
+  //добавить валидацию
+  formValidation();
+
+  // console.log(JSON.stringify(formData));
+  // fetch("./sendEmail", {
+  //   method: "post",
+  //   headers: {
+  //     "Content-Type": "application/json;charset=utf-8",
+  //   },
+  //   body: JSON.stringify(formData),
+  // });
+  // console.log("запрос ушел");
+}
 </script>
 
 <template>
   <div class="w-[571px] mx-auto">
     <SectionHeader>Оставь заявку и начни трансформацию!</SectionHeader>
-    <form action="">
-      <AppInput type="text" placeholder="ФИО" />
-      <AppInput type="email" placeholder="email" />
-      <AppInput type="number" placeholder="телефон" />
-      <DropDown :selectedItem="transformStore.PopUpOptions.name" />
+    <form action.prevent="">
+      <AppInput v-model="formData.name.value" type="text" placeholder="ФИО" />
+      <AppInput
+        v-model="formData.email.value"
+        type="email"
+        placeholder="email"
+      />
+      <AppInput
+        v-model="formData.number.value"
+        type="text"
+        placeholder="телефон"
+      />
+      <DropDown
+        @changeSelection="(value) => (formData.tariff = value)"
+        :selectedItem="transformStore.PopUpOptions.name"
+      />
       <button
-        @click.prevent=""
+        @click.prevent="sendForm()"
         type="submit"
         class="uppercase bg-beige200 text-black w-full py-4"
       >
@@ -24,4 +66,6 @@ const transformStore = useTransformStore();
       </p>
     </form>
   </div>
+
+  <!--  -->
 </template>

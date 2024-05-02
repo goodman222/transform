@@ -8,7 +8,10 @@ const props = defineProps({
   selectedItem: { type: String, default: "программа" },
 });
 
+const emits = defineEmits(["changeSelection"]);
+
 const dropdownOpen = ref(false);
+
 const selectedItem = ref(props.selectedItem);
 </script>
 
@@ -31,6 +34,7 @@ const selectedItem = ref(props.selectedItem);
           :key="index"
           @click="
             selectedItem = item;
+            emits('changeSelection', selectedItem);
             dropdownOpen = !dropdownOpen;
           "
           class="text-grey uppercase text-center border-b-2 border-gray-400 h-10 flex justify-center items-center"
