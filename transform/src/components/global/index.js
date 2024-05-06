@@ -25,6 +25,7 @@ import ContactsBlock from "./ContactsBlock.vue";
 import ContactsTile from "./ContactsTile.vue";
 import PopUp from "./PopUp.vue";
 import DropDown from "./DropDown.vue";
+import AdminPage from "./AdminPage.vue";
 
 const components = [
   { name: "AppHeader", component: AppHeader },
@@ -54,6 +55,7 @@ const components = [
   { name: "ContactsTile", component: ContactsTile },
   { name: "PopUp", component: PopUp },
   { name: "DropDown", component: DropDown },
+  { name: "AdminPage", component: AdminPage },
 ];
 
 export default {

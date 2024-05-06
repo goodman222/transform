@@ -2,6 +2,7 @@ import express from "express";
 import ViteExpress from "vite-express";
 import nodemailer from "nodemailer";
 import bodyParser from "body-parser";
+import fs from "fs";
 
 const app = express();
 
@@ -46,6 +47,22 @@ app.post("/sendEmail", async (req, res) => {
   console.log("end ------------------");
   console.log(resSend);
   res.send(resSend.response.slice(0, 2));
+});
+
+//Сохраняем изменения
+app.post("/saveChanges", async (req, res) => {
+  // console.log(JSON.stringify(req.body.data));
+  fs.writeFile(
+    `./back/db/${req.body.fileName}.json`,
+    JSON.stringify(req.body.data),
+    (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(`succes`);
+      }
+    }
+  );
 });
 
 ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
