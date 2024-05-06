@@ -5,7 +5,9 @@ export const useTransformStore = defineStore("TransformStore", {
     currentPage: "main",
     isPopupOpen: false,
     popUpType: "",
-    PopUpOptions: {},
+    PopUpOptions: {
+      name: "",
+    },
   }),
 
   actions: {

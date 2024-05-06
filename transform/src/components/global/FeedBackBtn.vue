@@ -5,7 +5,7 @@ const transformStore = useTransformStore();
 
 <template>
   <button
-    @click="transformStore.openPopUp('FeedBackForm', { name: 'программа' })"
+    @click="transformStore.openPopUp('FeedBackForm', { name: '' })"
     class="uppercase bg-beige200 px-12 py-4 font-medium text-base font-main"
   >
     оставить заявку
