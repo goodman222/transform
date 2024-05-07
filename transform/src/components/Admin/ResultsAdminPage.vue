@@ -46,6 +46,17 @@ async function sendPhoto(param) {
   // results.value[index].imgURL = `./src/assets/img/Results/${file.name}`;
 
   //загрузить фото на сервер
+
+  const formData = new FormData();
+  formData.append("file", file, file.name);
+  const response = await fetch("/uploadPhoto", {
+    method: "POST",
+    // headers: {
+    //   "Content-Type": "multipart/form-data",
+    // },
+    body: formData,
+  });
+  console.log("uploaded!");
 }
 </script>
 <template>

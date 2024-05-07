@@ -3,6 +3,9 @@ import ViteExpress from "vite-express";
 import nodemailer from "nodemailer";
 import bodyParser from "body-parser";
 import fs from "fs";
+import multer from "multer";
+
+const upload = multer({ dest: "uploads/" });
 
 const app = express();
 
@@ -63,6 +66,17 @@ app.post("/saveChanges", async (req, res) => {
       }
     }
   );
+});
+
+//Получаем фото
+// app.post("/uploadPhoto", async (req, res) => {
+//   console.log(req.body);
+// });
+
+app.post("/uploadPhoto", upload.single("file"), function (req, res, next) {
+  console.log(req.file);
+  // req.file is the `avatar` file
+  // req.body will hold the text fields, if there were any
 });
 
 ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
