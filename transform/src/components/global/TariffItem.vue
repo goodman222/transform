@@ -26,7 +26,7 @@ const { tariff } = defineProps({
             :key="index"
             class="flex flex-row align-center before:content-[url('./assets/img/check.png')] before:pt-[2px] before:mr-1 mb-4"
           >
-            {{ item }}
+            {{ item.value }}
           </li>
         </ul>
       </div>

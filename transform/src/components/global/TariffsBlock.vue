@@ -15,7 +15,7 @@ let { tariffs } = storeToRefs(tariffsStore);
     >
       <TariffItem
         v-for="(item, index) in tariffs"
-        :key="index"
+        :key="item.id"
         :tariff="item"
       />
     </div>
