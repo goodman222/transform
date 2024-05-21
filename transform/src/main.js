@@ -11,6 +11,7 @@ import TariffsPage from "./components/global/TariffsPage.vue";
 import ResultsPage from "./components/global/ResultsPage.vue";
 import ContactsPage from "./components/global/ContactsPage.vue";
 import AdminPage from "./components/global/AdminPage.vue";
+import TestPage from "./components/global/TestPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,6 +22,7 @@ const router = createRouter({
     { path: "/results", component: ResultsPage, name: "results" },
     { path: "/contacts", component: ContactsPage, name: "contacts" },
     { path: "/admin", component: AdminPage, name: "admin" },
+    { path: "/test", component: TestPage, name: "test" },
   ],
 });
 

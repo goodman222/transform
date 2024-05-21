@@ -2,11 +2,9 @@
 import { useTransformStore } from "./../../store/TransformStore";
 const transformStore = useTransformStore();
 
-const props = defineProps({
+const { tariff } = defineProps({
   tariff: Object,
 });
-
-const tariff = props.tariff;
 </script>
 
 <template>

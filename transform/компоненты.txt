@@ -1,0 +1,28 @@
+AdminPage.vue
+AboutUsPage.vue ----------------
+AdvantagesBlock.vue --------------
+AdvantageTile.vue -----------------
+AppFooter.vue--------------------
+AppHeader.vue--------------------
+AppInput.vue ------------------
+CoachesBlock.vue ----------------
+CoachesItem.vue
+ContactsBlock.vue ---------------
+ContactsPage.vue ---------------
+ContactsTile.vue ---------------
+DropDown.vue --------------------
+FeedBackBtn.vue -------------------
+FeedBackForm.vue ------------------
+FooterLink.vue ----------------------
+InfoBlock.vue ----------------------
+MainBlock.vue ----------------------
+MainPage.vue ----------------------
+NavBtn.vue ---------------------------
+PopUp.vue ---------------------------
+ResultsBlock.vue -------------------
+ResultsItem.vue------------------
+ResultsPage.vue ---------------------
+SectionHeader.vue ------------------
+TariffItem.vue ----------------
+TariffsBlock.vue -------------------
+TariffsPage.vue ---------------------

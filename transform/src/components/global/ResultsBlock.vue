@@ -43,7 +43,7 @@ async function getData() {
 
 const results = ref([]);
 
-getData().then((result) => (results.value = result));
+getData().then((res) => (results.value = res));
 </script>
 
 <template>
@@ -52,7 +52,7 @@ getData().then((result) => (results.value = result));
     <div class="grid grid-cols-3 gap-6 px-20">
       <ResultsItem
         v-for="(item, index) in results"
-        :key="index"
+        :key="item.id"
         :result="item"
         :isFull="false"
       />

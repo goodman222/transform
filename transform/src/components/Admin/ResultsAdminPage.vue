@@ -18,7 +18,7 @@ function addItem() {
     imgURL: "./src/assets/img/Results/1.png",
     name: "",
     text: "",
-    id: results.length,
+    id: results.value[results.length - 1]["id"] + 1,
   });
 }
 
@@ -39,11 +39,11 @@ async function saveChanges() {
 
 async function sendPhoto(param) {
   const [file, index] = param;
-  console.log(file);
+  console.log(`file.name: ${file.name}`);
   console.log(index);
-  //поменять название файла в объекте и обновить на сервере
 
-  // results.value[index].imgURL = `./src/assets/img/Results/${file.name}`;
+  const imgURL = `/back/images/`;
+  results.value[index].imgURL = imgURL + file.name;
 
   //загрузить фото на сервер
 
@@ -59,6 +59,7 @@ async function sendPhoto(param) {
   console.log("uploaded!");
 }
 </script>
+
 <template>
   <div>
     <SectionHeader>Резульаты</SectionHeader>

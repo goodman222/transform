@@ -130,6 +130,4 @@ async function sendForm() {
       <SectionHeader>Письмо отправлено!</SectionHeader>
     </div>
   </div>
-
-  <!--  -->
 </template>

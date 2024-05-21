@@ -15,7 +15,6 @@ const isEdited = ref(false);
 
 function fileUpload(e) {
   const file = e.target.files[0];
-  console.log(file);
   emits("uploadPhoto", [file, props.index]);
 }
 </script>

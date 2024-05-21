@@ -1,14 +1,10 @@
 <!-- Кнопки в шапке и подвале -->
 
 <script setup>
-import { useTransformStore } from "./../../store/TransformStore";
-const transformStore = useTransformStore();
-
 import { useRouter } from "vue-router";
 const router = useRouter();
 
 const props = defineProps({
-  textColor: String,
   targetPage: String,
 });
 

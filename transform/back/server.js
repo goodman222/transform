@@ -1,37 +1,33 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import nodemailer from "nodemailer";
-import bodyParser from "body-parser";
-import fs from "fs";
-import multer from "multer";
-
-const upload = multer({ dest: "uploads/" });
+// import bodyParser from "body-parser";
 
 const app = express();
 
 app.use(express.json());
 
-//отправляем письмо
+ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
+
+//отправляем письмо ---------------------------------------------
 async function sendEmail(data) {
   let transporter = nodemailer.createTransport({
     host: "smtp.mail.ru",
     port: 465,
     secure: true,
     auth: {
-      user: "markhrabryi@mail.ru",
+      user: "test34324@mail.ru",
       pass: "s7rH4tRcfcr140G88bJY",
     },
   });
 
-  // console.log(transporter);
-
   let result = await transporter.sendMail({
     from: '"Трансформация" <markhrabryi@mail.ru>',
-    to: "mark.hrabryi90@gmail.com",
+    to: "postpoluchetel@gmail.com",
     subject: "Новая заявка с сайта",
     html: data,
   });
-  console.log(`result-----------------------: ${result.response}`);
+  // console.log(`result: ${result.response}`);
   return result;
 }
 
@@ -46,13 +42,18 @@ app.post("/sendEmail", async (req, res) => {
   </ul>
   `;
 
-  const resSend = await sendEmail(message);
+  const sendResult = await sendEmail(message);
   console.log("end ------------------");
-  console.log(resSend);
-  res.send(resSend.response.slice(0, 2));
+  console.log(sendResult);
+  res.send(sendResult.response.slice(0, 2));
 });
 
-//Сохраняем изменения
+// --------------------------------------------
+
+import fs from "fs";
+import multer from "multer";
+
+//Сохраняем изменения -----------------------------------------------------
 app.post("/saveChanges", async (req, res) => {
   // console.log(JSON.stringify(req.body.data));
   fs.writeFile(
@@ -68,15 +69,23 @@ app.post("/saveChanges", async (req, res) => {
   );
 });
 
-//Получаем фото
-// app.post("/uploadPhoto", async (req, res) => {
-//   console.log(req.body);
-// });
+// загрузка фото ----------------------
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "./back/images");
+  },
+
+  filename: (req, file, cb) => {
+    file.originalname = Buffer.from(file.originalname, "latin1").toString(
+      "utf8"
+    );
+    cb(null, file.originalname);
+  },
+});
+const upload = multer({ storage: storage });
 
 app.post("/uploadPhoto", upload.single("file"), function (req, res, next) {
   console.log(req.file);
-  // req.file is the `avatar` file
-  // req.body will hold the text fields, if there were any
+  res.send(req.file.filename);
 });
-
-ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
