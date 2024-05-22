@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useAdminStore = defineStore("AdminStore", {
   state: () => ({
-    currentPage: "tariffs",
+    currentPage: "coaches",
   }),
 
   actions: {

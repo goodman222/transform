@@ -39,7 +39,8 @@
       }
     ],
     "cost": 4000,
-    "bgColor": "#F6F3EF"
+    "bgColor": "#F6F3EF",
+    "id": 0
   },
 
   {
@@ -97,7 +98,8 @@
       }
     ],
     "cost": 5000,
-    "bgColor": "#EFE8DF"
+    "bgColor": "#EFE8DF",
+    "id": 1
   },
 
   {
@@ -135,6 +137,7 @@
       }
     ],
     "cost": 7000,
-    "bgColor": "#F6F3EF"
+    "bgColor": "#F6F3EF",
+    "id": 2
   }
 ]

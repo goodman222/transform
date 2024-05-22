@@ -19,9 +19,9 @@ const coach = props.coach;
       <li
         class="text-center font-main text-base font-normal mx-auto mb-4"
         v-for="(item, index) in coach.characteristics"
-        :key="index"
+        :key="item.id"
       >
-        {{ item }}
+        {{ item.value }}
       </li>
     </ul>
   </div>
