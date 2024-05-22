@@ -1,8 +1,12 @@
 <script setup>
 import { storeToRefs } from "pinia";
 import { useTariffsStore } from "../../store/TariffsStore";
-const tariffsStore = useTariffsStore();
+
 import TariffItemAdmin from "./TariffItemAdmin.vue";
+const tariffsStore = useTariffsStore();
+
+import { useAdminStore } from "./../../store/AdminStore";
+const adminStore = useAdminStore();
 
 let { tariffs } = storeToRefs(tariffsStore);
 
@@ -10,6 +14,25 @@ function deleteTariff(index) {
   console.log("delete item");
   console.log(tariffs.value);
   tariffs.value.splice(index, 1);
+}
+
+function addItem() {
+  tariffs.value.push({
+    name: "Новая программа",
+    contnet: [
+      {
+        value: "",
+        isEdited: true,
+        id: 0,
+      },
+    ],
+    cost: 4000,
+    bgColor: "#F6F3EF",
+  });
+}
+
+function saveChanges() {
+  adminStore.saveChanges("tariffs", tariffs._object.tariffs);
 }
 </script>
 

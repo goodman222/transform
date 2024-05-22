@@ -4,34 +4,38 @@
     "contnet": [
       {
         "value": "Тренировки с командой 3 раза в неделю (12 тренировок за проект)",
-        "id": 0,
-        "isEdited": false
+        "isEdited": true,
+        "id": 0
       },
       {
         "value": "Фото профессионального фотографа до и после проекта",
-        "id": 1,
-        "isEdited": false
+        "isEdited": true,
+        "id": 1
       },
       {
         "value": "Коуч-сессия для постановки целей",
-        "id": 2,
-        "isEdited": false
+        "isEdited": true,
+        "id": 2
       },
       {
         "value": "Ежедневный чат контроля и отчётности",
-        "id": 3,
-        "isEdited": false
+        "isEdited": true,
+        "id": 3
       },
       {
         "value": "Чат поддержки, помощь наставника и общение с командой",
-        "id": 4,
-        "isEdited": false
+        "isEdited": true,
+        "id": 4
       },
-      { "value": "Замеры и оценка результата", "id": 5, "isEdited": false },
+      {
+        "value": "Замеры и оценка результата",
+        "isEdited": true,
+        "id": 5
+      },
       {
         "value": "Подарки и получение призов за лучшие результаты",
-        "id": 6,
-        "isEdited": false
+        "isEdited": true,
+        "id": 6
       }
     ],
     "cost": 4000,
@@ -43,58 +47,53 @@
     "contnet": [
       {
         "value": "Тренировки с командой 3 раза в неделю (12 тренировок за проект)",
-        "id": 0,
-        "isEdited": false
-      },
-      {
-        "value": "Фото профессионального фотографа до и после проекта",
-        "id": 1,
-        "isEdited": false
+        "isEdited": true,
+        "id": 0
       },
       {
         "value": "Коуч-сессия для постановки целей",
-        "id": 2,
-        "isEdited": false
+        "isEdited": true,
+        "id": 1
       },
       {
         "value": "Ежедневный чат контроля и отчётности",
-        "id": 3,
-        "isEdited": false
+        "isEdited": true,
+        "id": 2
       },
       {
         "value": "Чат поддержки, помощь наставника и общение с командой",
-        "id": 4,
-        "isEdited": false
+        "isEdited": true,
+        "id": 4
       },
       {
         "value": "Замеры и оценка результата",
-        "id": 5,
-        "isEdited": false
+        "isEdited": true,
+        "id": 5
       },
       {
         "value": "Подарки и получение призов за лучшие результаты",
-        "id": 6,
-        "isEdited": false
+        "isEdited": true,
+        "id": 6
       },
       {
         "value": "Ежедневный контроль питания с нутрициологом",
-        "id": 7,
-        "isEdited": false
+        "isEdited": true,
+        "id": 7
       },
       {
         "value": "Работа с пищевым поведением под контролем специалиста",
-        "id": 8,
-        "isEdited": false
+        "isEdited": true,
+        "id": 8
       },
       {
         "value": "Авторский журнал с рецептами в подарок",
-        "id": 9,
-        "isEdited": false
+        "isEdited": true,
+        "id": 9
       },
       {
         "value": "Очные лекции с полезными знаниями про работу организма",
-        "id": 10,
-        "isEdited": false
+        "isEdited": true,
+        "id": 10
       }
     ],
     "cost": 5000,
@@ -106,33 +105,33 @@
     "contnet": [
       {
         "value": "Список обследований с последующим разбором и расшифровкой",
-        "id": 0,
-        "isEdited": false
+        "isEdited": true,
+        "id": 0
       },
       {
         "value": "Расчёт БЖУ с рекомендациями по подбору продуктов",
-        "id": 1,
-        "isEdited": false
+        "isEdited": true,
+        "id": 1
       },
       {
         "value": "Персональная программа питания под нужную цель",
-        "id": 2,
-        "isEdited": false
+        "isEdited": true,
+        "id": 2
       },
       {
         "value": "Рекомендации по режиму дня и питьевому режиму",
-        "id": 3,
-        "isEdited": false
+        "isEdited": true,
+        "id": 4
       },
       {
         "value": "Ежедневный контроль соблюдения рациона",
-        "id": 4,
-        "isEdited": false
+        "isEdited": true,
+        "id": 5
       },
       {
         "value": "Поддержка и регулярные рекомендации",
-        "id": 5,
-        "isEdited": false
+        "isEdited": true,
+        "id": 5
       }
     ],
     "cost": 7000,

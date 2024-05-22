@@ -4,4 +4,21 @@ export const useAdminStore = defineStore("AdminStore", {
   state: () => ({
     currentPage: "tariffs",
   }),
+
+  actions: {
+    async saveChanges(fileName, data) {
+      const reqestData = {
+        fileName: fileName,
+        data: data,
+      };
+      console.log(JSON.stringify(reqestData));
+      const sendResult = await fetch("/saveChanges", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(reqestData),
+      });
+    },
+  },
 });

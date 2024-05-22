@@ -55,7 +55,7 @@ import multer from "multer";
 
 //Сохраняем изменения -----------------------------------------------------
 app.post("/saveChanges", async (req, res) => {
-  // console.log(JSON.stringify(req.body.data));
+  console.log(JSON.stringify(req.body.data));
   fs.writeFile(
     `./back/db/${req.body.fileName}.json`,
     JSON.stringify(req.body.data),

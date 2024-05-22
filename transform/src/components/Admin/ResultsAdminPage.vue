@@ -1,7 +1,9 @@
 <script setup>
 import ResultsItemAdmin from "./ResultsItemAdmin.vue";
-
 import { ref } from "vue";
+
+import { useAdminStore } from "./../../store/AdminStore";
+const adminStore = useAdminStore();
 
 async function getData() {
   const response = await fetch("./back/db/results.json");
@@ -18,23 +20,12 @@ function addItem() {
     imgURL: "./src/assets/img/Results/1.png",
     name: "",
     text: "",
-    id: results.value[results.length - 1]["id"] + 1,
+    id: results.value[results.value.length - 1]["id"] + 1,
   });
 }
 
-async function saveChanges() {
-  const reqestData = {
-    fileName: "results",
-    data: results.value,
-  };
-  console.log(JSON.stringify(reqestData));
-  const sendResult = await fetch("/saveChanges", {
-    method: "post",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-    body: JSON.stringify(reqestData),
-  });
+function saveChanges() {
+  adminStore.saveChanges("results", results.value);
 }
 
 async function sendPhoto(param) {
